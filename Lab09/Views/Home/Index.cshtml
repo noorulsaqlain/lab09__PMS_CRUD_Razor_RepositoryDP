@@ -1,0 +1,55 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container py-5">
+    <div class="row align-items-center justify-content-center text-center">
+        <div class="col-lg-8">
+            <h1 class="display-5 fw-bold text-dark mb-3">Product Management System</h1>
+            <p class="lead text-muted mb-4">
+                An ASP.NET Core MVC application built with Razor Views, C#, SQL Server (ADO.NET), and the Repository Design Pattern.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a asp-controller="Products" asp-action="Index" class="btn btn-primary btn-lg px-4 gap-3 shadow-sm">
+                    Go to Products
+                </a>
+                <a asp-controller="Products" asp-action="Create" class="btn btn-outline-secondary btn-lg px-4">
+                    + Add New Product
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Repository Pattern</h5>
+                    <p class="card-text text-muted">
+                        Complete decoupling of data access logic through <code>IProductRepository</code> interface and dependency injection.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Full CRUD Operations</h5>
+                    <p class="card-text text-muted">
+                        Create, Read, Update, and Delete products with complete server-side and client-side data annotations validation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Secure ADO.NET</h5>
+                    <p class="card-text text-muted">
+                        Parameterized SQL queries using <code>Microsoft.Data.SqlClient</code> protecting against SQL Injection vulnerabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

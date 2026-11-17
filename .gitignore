@@ -1,0 +1,12 @@
+## Visual Studio / .NET .gitignore
+[Bb]in/
+[Oo]bj/
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+appsettings.Development.json
+*.log
+TestResults/
